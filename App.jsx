@@ -5,7 +5,7 @@ import Button from './src/components/Button';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Giene</Text>
+      <Text>もう一回メモアプリを作成しよう</Text>
       <Button />
     </View>
   );
