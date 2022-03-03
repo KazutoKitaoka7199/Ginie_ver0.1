@@ -1,21 +1,10 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Button from './src/components/Button';
+// import InvensmentSettingBasic from './src/screens/InvestmentSettingBasic';
+// import Onboarding1 from './src/screens/Onboarding_01';
+import Onboarding2 from './src/screens/Onboarding_02';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>もう一回メモアプリを作成しよう</Text>
-      <Button />
-    </View>
+    <Onboarding2 />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
