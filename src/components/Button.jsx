@@ -1,15 +1,17 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import {
+  Text, StyleSheet, TouchableOpacity,
+} from 'react-native';
 import { string } from 'prop-types';
 
 export default function Button(props) {
   // 分割代入
-  const { label } = props;
+  const { label, onPress } = props;
   // const { label, onPress, style } = props;
   return (
-    <View style={styles.buttonContainer}>
+    <TouchableOpacity style={styles.buttonContainer} onPress={onPress}>
       <Text style={styles.buttonLabel}>{label}</Text>
-    </View>
+    </TouchableOpacity>
   );
 }
 

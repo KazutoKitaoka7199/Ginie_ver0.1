@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import {
   View, Text, Modal, Image, StyleSheet, TouchableOpacity, FlatList, Dimensions,
 } from 'react-native';
+import Button from '../components/Button';
 
 // eslint-disable-next-line react/prop-types
 export default function IntroModal({ isVisible, dismissModal }) {
@@ -15,6 +16,7 @@ export default function IntroModal({ isVisible, dismissModal }) {
         <Image style={styles.img} source={item.image} />
         <Text style={styles.title}>{item.title}</Text>
         <Text style={styles.text}>{item.text}</Text>
+        <Button label="次へ" />
       </View>
     );
   }
@@ -24,7 +26,7 @@ export default function IntroModal({ isVisible, dismissModal }) {
 
   const onViewRef = useRef(({ viewableItems }) => {
     setViewableItemIndex(viewableItems[0].index);
-    if (viewableItems[0].index === SLIDES.length - 1) {
+    if (viewableItems[0].index === SLIDES.length) {
       setButtonText('Done');
     } else {
       setButtonText('Next');
@@ -88,7 +90,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(240, 117, 108, 0.9)',
+    backgroundColor: '#ffffff',
   },
   space: {
     paddingTop: 40,
@@ -96,31 +98,35 @@ const styles = StyleSheet.create({
   slideInner: {
     width,
     justifyContent: 'center',
-    paddingBottom: 80,
+    paddingBottom: 200,
     alignItems: 'center',
     paddingHorizontal: '5%',
   },
   img: {
-    width: 100,
-    height: 100,
+    width: 300,
+    height: 250,
   },
   title: {
-    fontSize: 34,
+    fontSize: 26,
     fontWeight: 'bold',
+    top: 120,
+    width: 330,
     textAlign: 'center',
-    color: '#fff',
+    color: '#000000',
     marginTop: 8,
     marginBottom: 12,
   },
   text: {
-    fontSize: 17,
-    color: '#fff',
+    fontSize: 14,
+    color: '#808080',
+    top: 120,
+    width: 330,
     textAlign: 'center',
     lineHeight: 30,
   },
   bottomWrapper: {
     position: 'absolute',
-    bottom: 70,
+    bottom: 300,
     alignItems: 'center',
   },
   dotWrapper: {
@@ -130,23 +136,23 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   dot: {
-    width: 16,
-    height: 16,
+    width: 12,
+    height: 12,
     borderRadius: 8,
-    marginHorizontal: 6,
+    marginHorizontal: 4,
   },
   colorDot: {
-    backgroundColor: '#FFA700',
+    backgroundColor: '#0066FF',
   },
   whiteDot: {
-    backgroundColor: '#F2AB90',
+    backgroundColor: '#CCDEFF',
   },
   button: {
     marginTop: 18,
   },
   buttonText: {
     fontSize: 19,
-    color: '#fff',
+    color: '#000000',
   },
 });
 
