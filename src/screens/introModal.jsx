@@ -143,6 +143,7 @@ const styles = StyleSheet.create({
   },
   colorDot: {
     backgroundColor: '#0066FF',
+    width: 24,
   },
   whiteDot: {
     backgroundColor: '#CCDEFF',
