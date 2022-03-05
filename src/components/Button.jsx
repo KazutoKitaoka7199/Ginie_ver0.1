@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
     height: 56,
     bottom: 76,
     left: 21,
+    zIndex: 3,
   },
   buttonLabel: {
     fontSize: 16,

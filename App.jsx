@@ -4,9 +4,10 @@ import React from 'react';
 // import Onboarding2 from './src/screens/Onboarding_02';
 import SignIn from './src/screens/SignIn';
 // import Landing from './src/screens/Landing';
+import StockApi from './src/screens/StockApi';
 
 export default function App() {
   return (
-    <SignIn />
+    <StockApi />
   );
 }
