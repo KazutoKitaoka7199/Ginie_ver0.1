@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {
-  View, StyleSheet, Text,
+  View, StyleSheet, Text, Image,
 } from 'react-native';
 import axios from 'axios';
 // import clearbit from 'clearbit';
@@ -33,6 +33,7 @@ export default function StockApi() {
   }, []);
   return (
     <View style={styles.container}>
+      <Image source={{ url: 'https://logo.clearbit.com/segment.com?size=200&greyscale=true' }} />
       <Text style={styles.name}>{stockData.name}</Text>
       <Text style={styles.price}>
         $

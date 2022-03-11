@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Text, StyleSheet, TouchableOpacity,
-} from 'react-native';
+import { Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { string } from 'prop-types';
 
 export default function Button(props) {

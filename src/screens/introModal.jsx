@@ -34,7 +34,7 @@ export default function IntroModal({ isVisible, dismissModal }) {
   });
 
   const onBottomButton = () => {
-    if (viewableItemIndex < SLIDES.length - 1) {
+    if (viewableItemIndex < SLIDES.length + 1) {
       flatListRef.current.scrollToIndex({ animated: true, index: viewableItemIndex + 1 });
     } else {
       dismissModal();
