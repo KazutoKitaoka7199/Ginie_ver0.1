@@ -4,7 +4,8 @@ import {
 } from 'react-native';
 import Button from '../components/Button';
 
-export default function SignIn() {
+export default function SignIn(props) {
+  const { navigation } = props;
   return (
     <View>
       <Text>ログイン</Text>
@@ -22,7 +23,15 @@ export default function SignIn() {
         secureTextEntry
         textContentType="password"
       />
-      <Button label="ログイン" />
+      <Button
+        label="ログイン"
+        onPress={() => {
+          navigation.reset({
+            index: 0,
+            routes: [{ name: 'Landing' }],
+          });
+        }}
+      />
       <Text>新規ユーザーの方は</Text>
     </View>
   );
