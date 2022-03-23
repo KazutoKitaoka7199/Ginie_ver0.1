@@ -19,7 +19,7 @@
     ],
     "rules": {
         "no-use-before-define": 0,
-        "react/prop-types": ["error",{"ignore":["navigation","isLoading"] }],
+        "react/prop-types": ["error",{"ignore":["navigation","isLoading","title"] }],
         "global-require": "off"
     }
 }
