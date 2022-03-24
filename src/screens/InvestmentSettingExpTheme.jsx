@@ -5,7 +5,7 @@ import {
 import Appbar from '../components/AppBar';
 import HeaderGuide from '../components/HeaderGuide';
 
-export default function InvestmentSettingExpert01() {
+export default function InvestmentSettingExpTheme() {
   return (
     <View style={styles.container}>
       <Appbar title="資産運用" />

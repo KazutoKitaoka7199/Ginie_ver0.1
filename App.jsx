@@ -4,13 +4,13 @@ import { View } from 'react-native';
 // import Landing from './src/screens/Landing';
 // import StockApi from './src/screens/StockApi';
 // import AddProduct from './src/screens/AddProduct';
-// import BalanceProduct from './src/screens/BalanceProduct';
-import InvestmentSettingExpert01 from './src/screens/InvestmentSettingExpert_01';
+import BalanceProduct from './src/screens/BalanceProduct';
+// import InvestmentSettingExpTheme from './src/screens/InvestmentSettingExpTheme';
 
 export default function App() {
   return (
     <View>
-      <InvestmentSettingExpert01 />
+      <BalanceProduct />
     </View>
   );
 }
