@@ -6,12 +6,13 @@ import { View } from 'react-native';
 // import AddProduct from './src/screens/AddProduct';
 // import BalanceProduct from './src/screens/BalanceProduct';
 // import InvestmentSettingExpTheme from './src/screens/InvestmentSettingExpTheme';
-import InvestmentSettingExpPie from './src/screens/InvestmentSettingExpPie';
+// import InvestmentSettingExpPie from './src/screens/InvestmentSettingExpPie';
+import InvestmentStatus from './src/screens/InvestmentStatus';
 
 export default function App() {
   return (
     <View>
-      <InvestmentSettingExpPie />
+      <InvestmentStatus />
     </View>
   );
 }

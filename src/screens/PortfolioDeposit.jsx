@@ -1,10 +1,13 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import Appbar from '../components/AppBar';
+import HeaderGuide from '../components/HeaderGuide';
 
-export default function AddProduct() {
+export default function PortfolioDeposit() {
   return (
     <View>
-      <Text>資産運用</Text>
+      <Appbar title="資産運用" />
+      <HeaderGuide />
     </View>
   );
 }
