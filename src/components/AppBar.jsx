@@ -15,7 +15,7 @@ export default function Appbar(props) {
 const styles = StyleSheet.create({
   appbar: {
     width: '100%',
-    height: 104,
+    height: 80,
     justifyContent: 'flex-end',
   },
   appInner: {

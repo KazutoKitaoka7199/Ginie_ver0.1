@@ -10,7 +10,7 @@ export default function HeaderGuide() {
   const lineImg = Image.resolveAssetSource(Line);
   const ellipseImg = Image.resolveAssetSource(Ellipse);
   return (
-    <View>
+    <View style={styles.container}>
       <Image
         source={Line}
         style={[styles.line, {
@@ -54,7 +54,7 @@ export default function HeaderGuide() {
         <Text style={styles.step2}>step2</Text>
         <Text style={styles.step3}>step3</Text>
       </View>
-      <View>
+      <View style={styles.guide}>
         <Text style={styles.guide1}>基本設定</Text>
         <Text style={styles.guide2}>ポートフォリオ作成</Text>
         <Text style={styles.guide3}>入金設定</Text>
@@ -64,6 +64,9 @@ export default function HeaderGuide() {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    marginTop: 50,
+  },
   line: {
     position: 'absolute',
     left: '50%',
@@ -73,32 +76,33 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
   },
   steps: {
-    position: 'absolute',
+    flexDirection: 'row',
   },
   step1: {
-    left: 45,
+    marginLeft: 45,
+    lineHeight: 18,
   },
   step2: {
-    position: 'absolute',
-    left: 177.5,
+    marginLeft: 92.5,
+    lineHeight: 18,
   },
   step3: {
-    position: 'absolute',
-    left: 305,
+    marginLeft: 95,
+    lineHeight: 18,
+  },
+  guide: {
+    flexDirection: 'row',
   },
   guide1: {
-    left: 30,
-    position: 'absolute',
-    lineHeight: 30,
+    marginLeft: 30,
+    lineHeight: 18,
   },
   guide2: {
-    left: 130,
-    position: 'absolute',
-    lineHeight: 30,
+    marginLeft: 40,
+    lineHeight: 18,
   },
   guide3: {
-    left: 300,
-    position: 'absolute',
-    lineHeight: 30,
+    marginLeft: 40,
+    lineHeight: 18,
   },
 });
