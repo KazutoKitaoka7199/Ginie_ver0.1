@@ -7,12 +7,13 @@ import { View } from 'react-native';
 // import BalanceProduct from './src/screens/BalanceProduct';
 // import InvestmentSettingExpTheme from './src/screens/InvestmentSettingExpTheme';
 // import InvestmentSettingExpPie from './src/screens/InvestmentSettingExpPie';
+import SignIn from './src/screens/SignIn';
 import InvestmentStatus from './src/screens/InvestmentStatus';
 
 export default function App() {
   return (
     <View>
-      <InvestmentStatus />
+      <SignIn />
     </View>
   );
 }
