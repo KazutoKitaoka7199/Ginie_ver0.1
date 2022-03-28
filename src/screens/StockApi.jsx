@@ -3,7 +3,6 @@ import {
   View, StyleSheet, Text, Image,
 } from 'react-native';
 import axios from 'axios';
-// import clearbit from 'clearbit';
 
 export default function StockApi() {
   const URL = 'http://api.marketstack.com/v1/tickers';

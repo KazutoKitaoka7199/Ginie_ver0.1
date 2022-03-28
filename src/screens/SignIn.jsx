@@ -9,7 +9,7 @@ import {
 import { auth } from '../components/Firebase';
 import Button from '../components/Button';
 
-export default function SignUpScreen(props) {
+export default function SignIn(props) {
   const { navigation } = props;
   const [email, setEmail] = useState('');
   const [pass, setPass] = useState('');
