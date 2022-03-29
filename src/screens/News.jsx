@@ -6,7 +6,7 @@ import axios from 'axios';
 import Constants from 'expo-constants';
 import ListItem from '../components/ListItem';
 
-export default function HomeScreens(props) {
+export default function News(props) {
   const { navigation } = props;
   const [articles, setArticles] = useState();
   useEffect(() => {
@@ -46,28 +46,7 @@ export default function HomeScreens(props) {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    marginTop: 30,
     backgroundColor: '#fff',
-  },
-  itemContainer: {
-    height: 100,
-    width: '100%',
-    borderColor: 'gray',
-    borderWidth: 1,
-    flexDirection: 'row',
-  },
-  leftContainer: {
-    width: 100,
-  },
-  rightContainer: {
-    flexDirection: 'column',
-    flex: 1,
-    paddingVertical: 10,
-    paddingHorizontal: 10,
-    justifyContent: 'space-around',
-  },
-  subtext: {
-    fontSize: 12,
-    color: 'gray',
   },
 });
