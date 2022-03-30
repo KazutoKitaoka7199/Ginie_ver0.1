@@ -1,17 +1,17 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import News from '../screens/News';
-import Article from '../screens/Article';
+import NewsScreen from '../screens/NewsScreen';
+import ArticleScreen from '../screens/ArticleScreen';
 
-export default function AppNavigator() {
+export default function Navigator() {
   const Stack = createNativeStackNavigator();
 
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="News" component={News} />
-        <Stack.Screen name="Article" component={Article} />
+        <Stack.Screen name="News" component={NewsScreen} />
+        <Stack.Screen name="Article" component={ArticleScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
 });
 
 // functionではなく、アロー関数じゃないとうまく表示されない。routeを受け取っている
-function Article({ route }) {
+function ArticleScreen({ route }) {
   const { article } = route.params;
 
   return (
@@ -23,4 +23,4 @@ function Article({ route }) {
   );
 }
 
-export default Article;
+export default ArticleScreen;

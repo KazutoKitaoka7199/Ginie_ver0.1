@@ -6,7 +6,7 @@ import axios from 'axios';
 import Constants from 'expo-constants';
 import ListItem from '../components/ListItem';
 
-export default function News(props) {
+export default function NewsScreen(props) {
   const { navigation } = props;
   const [articles, setArticles] = useState();
   useEffect(() => {
@@ -46,7 +46,6 @@ export default function News(props) {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 30,
     backgroundColor: '#fff',
   },
 });
