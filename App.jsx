@@ -1,7 +1,7 @@
 import React from 'react';
-import { LogBox } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { LogBox, View } from 'react-native';
+// import { NavigationContainer } from '@react-navigation/native';
+// import { createNativeStackNavigator } from '@react-navigation/native-stack';
 // import SignIn from './src/screens/SignIn';
 // import Landing from './src/screens/Landing';
 // import StockApi from './src/screens/StockApi';
@@ -16,18 +16,23 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 // import News from './src/screens/News';
 import News from './src/screens/screen-components/NewsScreen';
 import Article from './src/screens/screen-components/ArticleScreen';
+import BottomNavigation from './src/navigation/BottomNavigation';
+import Navigation from './src/navigation/Navigation';
 
 LogBox.ignoreLogs(['AsyncStorage']);
 
 export default function App() {
-  const Stack = createNativeStackNavigator();
+  // const Stack = createNativeStackNavigator();
 
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="News" component={News} />
-        <Stack.Screen name="Article" component={Article} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <View>
+      <BottomNavigation />
+    </View>
+    // <NavigationContainer>
+    //   <Stack.Navigator>
+    //     <Stack.Screen name="News" component={News} />
+    //     <Stack.Screen name="Article" component={Article} />
+    //   </Stack.Navigator>
+    // </NavigationContainer>
   );
 }

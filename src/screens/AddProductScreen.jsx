@@ -9,7 +9,7 @@ import {
 import HeaderGuide from '../components/HeaderGuide';
 import Appbar from '../components/AppBar';
 
-export default function AddProduct() {
+export default function AddProductScreen() {
   return (
     <View style={styles.container}>
       <View>

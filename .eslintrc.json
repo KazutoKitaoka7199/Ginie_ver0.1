@@ -20,6 +20,7 @@
     "rules": {
         "no-use-before-define": 0,
         "react/prop-types": "off",
-        "global-require": "off"
+        "global-require": "off",
+        "react/no-unstable-nested-components": "off"
     }
 }

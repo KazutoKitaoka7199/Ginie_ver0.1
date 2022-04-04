@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import NewsScreen from '../screens/screen-components/NewsScreen';
 import ArticleScreen from '../screens/screen-components/ArticleScreen';
 
-export default function Navigator() {
+export default function Navigation() {
   const Stack = createNativeStackNavigator();
 
   return (
