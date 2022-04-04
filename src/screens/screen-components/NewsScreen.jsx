@@ -4,7 +4,7 @@ import {
 } from 'react-native';
 import axios from 'axios';
 import Constants from 'expo-constants';
-import ListItem from '../components/ListItem';
+import ListItem from '../../components/ListItem';
 
 export default function NewsScreen(props) {
   const { navigation } = props;

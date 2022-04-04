@@ -5,7 +5,7 @@ import {
   StyleSheet,
 } from 'react-native';
 
-export default function AddProduct() {
+export default function HeaderGuide() {
   return (
     <View>
       <View style={styles.search}>

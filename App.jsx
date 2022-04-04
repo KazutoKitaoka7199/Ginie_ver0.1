@@ -14,8 +14,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 // import SignInScreen from './src/screens/SignUpScreen';
 // import Login from './src/screens/Login';
 // import News from './src/screens/News';
-import News from './src/screens/NewsScreen';
-import Article from './src/screens/ArticleScreen';
+import News from './src/screens/screen-components/NewsScreen';
+import Article from './src/screens/screen-components/ArticleScreen';
 
 LogBox.ignoreLogs(['AsyncStorage']);
 

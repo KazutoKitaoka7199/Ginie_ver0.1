@@ -1,11 +1,4 @@
-import { format } from 'date-fns';
-
-export function dateToString(date) {
-  if (!date) { return ''; }
-  return format(date, 'yyyy年M月d日HH時mm分');
-}
-
-export function translateErrors(code) {
+export default function translateErrors(code) {
   const error = { title: 'エラー', description: '時間をおいてお試しください' };
   switch (code) {
     case 'auth/invalid-email':

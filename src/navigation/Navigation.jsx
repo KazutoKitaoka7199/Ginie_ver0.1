@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import NewsScreen from '../screens/NewsScreen';
-import ArticleScreen from '../screens/ArticleScreen';
+import NewsScreen from '../screens/screen-components/NewsScreen';
+import ArticleScreen from '../screens/screen-components/ArticleScreen';
 
 export default function Navigator() {
   const Stack = createNativeStackNavigator();
