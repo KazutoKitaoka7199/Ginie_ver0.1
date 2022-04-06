@@ -9,7 +9,7 @@ import { LogBox, View } from 'react-native';
 // import BalanceProduct from './src/screens/BalanceProduct';
 // import InvestmentSettingExpTheme from './src/screens/InvestmentSettingExpTheme';
 // import InvestmentSettingExpPie from './src/screens/InvestmentSettingExpPie';
-// import SignIn from './src/screens/SignIn';
+import SignIn from './src/screens/SignIn';
 // import InvestmentStatus from './src/screens/InvestmentStatus';
 // import SignInScreen from './src/screens/SignUpScreen';
 // import Login from './src/screens/Login';

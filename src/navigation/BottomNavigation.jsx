@@ -22,38 +22,11 @@ export default function BottomNavigation() {
   return (
     // BottomNavigation
     <NavigationContainer>
-      <Tab.Navigator
-        initialRouteName={AddProduct}
-        screenOptions={({ route }) => ({
-          tabBarIcon: ({ focused, color, size }) => {
-            let iconName;
-            const rn = route.name;
-
-            if (rn === AddProduct) {
-              iconName = focused
-                ? 'pie-chart'
-                : 'pie-chart-outline';
-            } else if (rn === Payment) {
-              iconName = focused
-                ? 'wallet'
-                : 'wallet-outline';
-            } else if (rn === Borrow) {
-              iconName = focused
-                ? 'download'
-                : 'download-outline';
-            } else if (rn === Checking) {
-              iconName = focused
-                ? 'cash'
-                : 'cash-outline';
-            }
-            return <Ionicons name={iconName} size={size} color={color} />;
-          },
-        })}
-      >
-        <Tab.Screen name="資産運用" component={AddProductScreen} />
-        <Tab.Screen name="入金" component={PaymentScreen} />
-        <Tab.Screen name="借入" component={BorrowingScreen} />
-        <Tab.Screen name="決済口座" component={CheckingStatusScreen} />
+      <Tab.Navigator>
+        <Tab.Screen name={AddProduct} component={AddProductScreen} />
+        <Tab.Screen name={Payment} component={PaymentScreen} />
+        <Tab.Screen name={Borrow} component={BorrowingScreen} />
+        <Tab.Screen name={Checking} component={CheckingStatusScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );

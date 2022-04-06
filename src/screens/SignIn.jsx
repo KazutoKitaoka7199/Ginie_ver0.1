@@ -8,7 +8,7 @@ import {
 } from 'firebase/auth';
 import { auth } from '../components/Firebase';
 import Button from '../components/Button';
-import { translateErrors } from '../utilities';
+import translateErrors from '../utilities';
 
 export default function SignIn(props) {
   const { navigation } = props;
